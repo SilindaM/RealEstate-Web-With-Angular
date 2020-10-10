@@ -1,9 +1,19 @@
 <div class="container-fluid">
     <div class="row">
-        <div  *ngFor="let pro of proporty"  class="propImg shadow-md col-md-3 text-center mt-4">
+        <div  *ngFor="let pro of proporty"  class="shadow-md col-md-3 text-center mt-4">
         <div class="card">
-            <img class="img-fluid" src="assets\images\images (2).jfif"  alt="">
-             <div class="body-card">
+            <div class="card-img-wrapper"> 
+                <img class="card-img-top " src="assets\images\images (2).jfif"  alt="">
+                <ul class="list-inline text-center contacts">
+                    <li class="list-inline-item">
+                        <button class="btn btn-warning">E</button>
+                    </li>
+                     <li class="list-inline-item">
+                        <button class="btn btn-warning">C</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="body-card">
                 <h3>{{pro.name}}</h3>
                 <h5>{{pro.type}}</h5>
                 <h5>{{pro.price}}</h5>

@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PropertyListComponent } from './property/property-list/property-list.component';
 import { FrameworlModule } from './frameworl/frameworl.module';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FrameworlModule } from './frameworl/frameworl.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FrameworlModule
+    FrameworlModule, 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

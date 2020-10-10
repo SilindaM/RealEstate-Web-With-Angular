@@ -9,11 +9,13 @@ import { PropertyService } from 'src/app/property/property.service';
 })
 export class PropertyCardComponent implements OnInit {
 
-  @Input() property_details:Property
-  proporty:Array<Property>;
+  public proporty:Property;
   constructor(private propertyservice:PropertyService) { }
 
   ngOnInit(): void {
-     this.proporty=this.propertyservice.GetProperties();
-  }
+    this.propertyservice.GetProperties().subscribe(data=> {
+      this.proporty=data;
+      console.log(data)
+    });
+    }
 }
