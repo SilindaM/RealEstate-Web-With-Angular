@@ -1,18 +1,20 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
 import { Property } from '../property';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PropertyService {
-
-  properti:Property;
+   properties:Array<Property>
   constructor() { }
 
-  GetProperties():Property{
-    return this.properti= 
-    {id:1,name:"Silinda",price:14502,type:"House"},
-    {id:1,name:"Silinda",price:14502,type:"House"}
-  }
+  GetProperties(): Array<Property>{
+  return  this.properties= [
+      {id:1,name:"Silinda",price:145802,type:"House"},
+      {id:2,name:"Likazi",price:14502,type:"Mkhukhu"},
+      {id:3,name:"Nelspruit",price:4000,type:"Flat"},
+      {id:4,name:"Kamagugu",price:87400,type:"House"}
+
+]
+}
 }

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Property } from 'src/app/property';
+import { PropertyService } from 'src/app/property/property.service';
 
 @Component({
   selector: 'app-property-card',
@@ -7,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyCardComponent implements OnInit {
 
-
-  constructor() { }
+  @Input() property_details:Property
+  proporty:Array<Property>;
+  constructor(private propertyservice:PropertyService) { }
 
   ngOnInit(): void {
+     this.proporty=this.propertyservice.GetProperties();
   }
-
 }
