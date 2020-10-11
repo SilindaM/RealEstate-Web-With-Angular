@@ -6,11 +6,17 @@ import { AppComponent } from './app.component';
 import { PropertyListComponent } from './property/property-list/property-list.component';
 import { FrameworlModule } from './frameworl/frameworl.module';
 import { HttpClientModule } from "@angular/common/http";
+import { AddPropertyComponent } from './property/add-property/add-property.component';
+import { ViewbuyComponent } from './property/viewbuy/viewbuy.component';
+import { ViewrentComponent } from './property/viewrent/viewrent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PropertyListComponent
+    PropertyListComponent,
+    AddPropertyComponent,
+    ViewbuyComponent,
+    ViewrentComponent
   ],
   imports: [
     BrowserModule,

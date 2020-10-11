@@ -9,9 +9,11 @@ import { Property } from '../property';
 export class PropertyService {
 
   
+  public  url="assets/data/properties.json";
   constructor(private http:HttpClient) { }
 
-  GetProperties(){ 
-      return this.http.get('data/properti.json');
+  GetProperties():Observable <Property>{ 
+      return this.http.get<Property>(this.url);
   }
 }
+33

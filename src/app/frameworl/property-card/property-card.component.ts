@@ -9,7 +9,7 @@ import { PropertyService } from 'src/app/property/property.service';
 })
 export class PropertyCardComponent implements OnInit {
 
-   proporty;
+   proporty:Property;
   constructor(private propertyservice:PropertyService) { }
 
   ngOnInit(): void {

@@ -1,0 +1,47 @@
+[
+  {
+    "id":12,
+    "name":"Thekwane",
+    "type":"house",
+    "price":45100
+  } ,
+  {
+    "id":127,
+    "name":"Pienar",
+    "type":"mkhukhu",
+    "price":851
+  },{
+    "id":12,
+    "name":"Luphisa",
+    "type":"house",
+    "price":45100
+  } ,
+  {
+    "id":127,
+    "name":"Mluti",
+    "type":"mkhukhu",
+    "price":851
+  },{
+    "id":162,
+    "name":"Elawini",
+    "type":"Mansion",
+    "price":4518500
+  } ,
+  {
+    "id":1227,
+    "name":"Magugu",
+    "type":"Single room flat",
+    "price":4582
+  },{
+    "id":126,
+    "name":"steltes",
+    "type":"Double Room Flat",
+    "price":300
+  } ,
+  {
+    "id":127,
+    "name":"River Side",
+    "type":"Bachelor",
+    "price":78452
+  }
+]
