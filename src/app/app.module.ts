@@ -9,6 +9,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { AddPropertyComponent } from './property/add-property/add-property.component';
 import { ViewbuyComponent } from './property/viewbuy/viewbuy.component';
 import { ViewrentComponent } from './property/viewrent/viewrent.component';
+import { DetailsComponent } from './property/details/details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ViewrentComponent } from './property/viewrent/viewrent.component';
     PropertyListComponent,
     AddPropertyComponent,
     ViewbuyComponent,
-    ViewrentComponent
+    ViewrentComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
