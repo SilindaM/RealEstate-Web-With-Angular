@@ -1,7 +1,8 @@
 [
-    {"id":1,"name":"Silinda","price":145802,"type":"House"},
-    {"id":2,"name":"Likazi","price":14502,"type":"Mkhukhu"},
-    {"id":3,"name":"Nelspruit","price":4000,"type":"Flat"},
-    {"id":4,"name":"Kamagugu","price":87400,"type":"House"}
-
+    {
+    "id":12,
+     "name":"Mdu",
+      "type":"house",
+      "price":45100
+    }  
 ]

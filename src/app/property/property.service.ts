@@ -7,10 +7,11 @@ import { Property } from '../property';
   providedIn: 'root'
 })
 export class PropertyService {
+
+  
   constructor(private http:HttpClient) { }
 
-  GetProperties(): Observable<Property>{
-    const url="properti.json";
-    return this.http.get<Property>(url);
+  GetProperties(){ 
+      return this.http.get('data/properti.json');
   }
 }
